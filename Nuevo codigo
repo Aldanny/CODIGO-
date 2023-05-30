@@ -1,0 +1,58 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+public class Veinte {
+    public static void main(String[] args) {
+        // Crear un ArrayList
+        ArrayList<String> Colores = new ArrayList<>();
+
+        // Agregar elementos a la lista
+        Colores.add("Azul");
+        Colores.add("Ambar");
+        Colores.add("Rosa");
+        Colores.add("Morado");
+        Colores.add("Violeta");
+        Colores.add("Amarillo");
+        Colores.add("Naranja");
+        Colores.add("Negro");
+        Colores.add("Blanco");
+        Colores.add("Verde");
+        Colores.add("Esmeralda");
+        Colores.add("Dorado");
+        Colores.add("Plateado");
+        Colores.add("Cafe");
+        Colores.add("Gris");
+        Colores.add("Jade");
+        Colores.add("Vino");
+        Colores.add("Turquesa");
+        Colores.add("Carnita");
+        Colores.add("Caqui");
+        
+        
+        String primerElemento = Colores.get(0);
+        System.out.println("Elemento1: " + primerElemento);
+
+        
+        String ultimoElemento = Colores.get(Colores.size() - 1);
+        System.out.println("Elemento20: " + ultimoElemento);
+        
+        int indice = Colores.indexOf("Violeta");
+        System.out.println("Índice de 'Violeta': " + indice);
+        String Rojof = ("Rojo");
+        
+        Colores.add(0,Rojof);
+        
+        
+       Colores.remove(0);
+       System.out.println("\n\n\n\nDesplegar\n");
+        System.out.println(Colores);
+        
+        Colores.remove("Esmeralda");
+        Collections.reverse(Colores);
+       System.out.println("\n\n\n\nInvertir\n");
+        System.out.println(Colores );
+       
+      
+            }
+        }
